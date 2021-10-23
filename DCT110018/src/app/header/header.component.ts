@@ -16,8 +16,11 @@ export class HeaderComponent  {
     }, 2000);
   }
 
-  changeTitle() {
-    this.sitename = 'click';
+  changeTitle($event: MouseEvent) {
+    if ($event.ctrlKey)
+    {
+      this.sitename = 'click';
+    }
   }
 
 }
