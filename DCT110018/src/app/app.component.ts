@@ -24,4 +24,8 @@ export class AppComponent {
   doSearch(value: string ) {
     this.result = value;
   }
+
+  deleteArticle(id: number) {
+    this.data.splice(id, 1);
+  }
 }
