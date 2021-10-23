@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent  {
 
-  constructor() { }
+  sitename = 'The Will Will Web';
+  sitelogo = '/assets/images/logo.png';
+
+  constructor() {
+    setTimeout(() => {
+      this.sitename = 'canboo inside';
+    }, 2000);
+  }
+
+  changeTitle() {
+    this.sitename = 'click';
+  }
 
 }
